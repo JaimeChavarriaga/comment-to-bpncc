@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and mandatory="true" name="PulseSensor">
+				<alt mandatory="true" name="OperatingDistance">
+					<feature name="10m"/>
+					<feature name="30m"/>
+				</alt>
+				<alt name="Accuracy">
+					<feature name="95%"/>
+					<feature name="100%"/>
+				</alt>
+				<feature mandatory="true" name="ZigBeeCP"/>
+				<or mandatory="true" name="Connectivity">
+					<feature name="WiFiCP"/>
+					<feature name="Bluetooth"/>
+				</or>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<var>PulseSensor</var>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

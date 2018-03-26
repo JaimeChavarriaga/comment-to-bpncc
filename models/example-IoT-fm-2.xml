@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="F">
+				<or mandatory="true" name="F1">
+					<alt name="F1-1">
+						<feature name="F1-1-1"/>
+						<feature name="F1-1-2"/>
+					</alt>
+					<alt name="F1-2">
+						<feature name="F1-2-1"/>
+						<feature name="F1-2-2"/>
+						<feature name="F1-2-3"/>
+						<feature name="F1-2-4"/>
+					</alt>
+					<or name="F1-3">
+						<feature name="F1-3-1"/>
+						<feature name="F1-3-2"/>
+						<feature name="F1-3-3"/>
+					</or>
+				</or>
+				<feature name="F2"/>
+				<feature name="F3"/>
+				<alt mandatory="true" name="F4">
+					<alt name="F4-1">
+						<feature name="F4-1-1"/>
+						<feature name="F4-1-2"/>
+					</alt>
+					<and name="F4-2">
+						<feature mandatory="true" name="F4-2-1"/>
+						<feature name="F4-2-2"/>
+						<feature name="F4-2-3"/>
+					</and>
+					<or name="F4-3">
+						<feature name="F4-3-1"/>
+						<feature name="F4-3-2"/>
+						<feature name="F4-3-3"/>
+					</or>
+				</alt>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
