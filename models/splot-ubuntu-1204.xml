@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and mandatory="true" name="ubuntu_12_04">
+				<and mandatory="true" name="Accessibility">
+					<and name="Appearance">
+						<and mandatory="true" name="Look">
+							<alt mandatory="true" name="Background">
+								<feature name="DelicatePetals1920x1280"/>
+								<feature name="MorningDew1920x1280"/>
+								<feature name="Ubuntu1920x1280"/>
+								<feature name="PrecisePagolin1920x1280"/>
+								<feature name="TwillightFrost1920x1280"/>
+								<feature name="EarlyBlossom1920x1280"/>
+							</alt>
+							<alt mandatory="true" name="Theme">
+								<feature name="HighContrastInverse"/>
+								<feature name="AmbianceDefault"/>
+								<feature name="Radiance"/>
+								<feature name="HighContrast"/>
+							</alt>
+							<alt mandatory="true" name="LauncherIconSize">
+								<feature name="_48"/>
+								<feature name="_64"/>
+								<feature name="_32"/>
+							</alt>
+						</and>
+						<and mandatory="true" name="Behavoir">
+							<feature name="AutoHideTheLauncher"/>
+							<alt mandatory="true" name="RevealLocation">
+								<feature name="Left"/>
+								<feature name="TopLeftCorner"/>
+							</alt>
+							<alt mandatory="true" name="RevealSensitivity">
+								<feature name="Low1"/>
+								<feature name="High1"/>
+							</alt>
+						</and>
+					</and>
+					<and name="BrightnessAndLock">
+						<and mandatory="true" name="Brightness">
+							<feature name="DimSceenToSavePower"/>
+							<alt mandatory="true" name="TurnScreenOffWhenInactiveFor">
+								<feature name="_1Hour"/>
+								<feature name="_10Minutes"/>
+								<feature name="_1Minute"/>
+								<feature name="_3Minutes"/>
+								<feature name="_2Minutes"/>
+								<feature name="Never"/>
+								<feature name="_30Minutes"/>
+							</alt>
+						</and>
+						<and name="Lock">
+							<alt mandatory="true" name="LockScreenAfter">
+								<feature name="_1Minute_"/>
+								<feature name="_5Minutes_"/>
+								<feature name="_2Minutes_"/>
+								<feature name="_30Minutes_"/>
+								<feature name="ScreenTurnsOff"/>
+								<feature name="_30Seconds"/>
+								<feature name="_10Minutes_"/>
+								<feature name="_1Hour_"/>
+							</alt>
+						</and>
+						<feature name="RequireMyPasswordWhenWakingFromSuspend"/>
+					</and>
+					<and name="Displays1">
+						<alt mandatory="true" name="Resolution">
+							<feature name="Counterclockwise"/>
+							<feature name="_180Degres"/>
+							<feature name="Clockwise"/>
+							<feature name="Normal1"/>
+						</alt>
+						<feature mandatory="true" name="Rotation"/>
+						<alt mandatory="true" name="LauncherPlacement">
+							<feature name="AllDisplays"/>
+							<feature name="Laptop"/>
+						</alt>
+						<feature name="StickyEdges"/>
+					</and>
+					<and name="UniversalAccess1">
+						<and name="Seeing">
+							<and mandatory="true" name="Displays2">
+								<alt mandatory="true" name="Contrast">
+									<feature name="Low2"/>
+									<feature name="High2"/>
+									<feature name="HighInverse"/>
+									<feature name="Normal2"/>
+								</alt>
+								<feature mandatory="true" name="TextSize"/>
+							</and>
+							<feature name="ScreenReader"/>
+							<feature name="BeepWhenCapsAndNumLockAreUsed"/>
+						</and>
+						<and name="Hearing">
+							<feature name="VisualAlerts"/>
+							<alt mandatory="true" name="UseAVisualIndicationWhenAnAlertSoundOccurs">
+								<feature name="FlashTheWindowTitle"/>
+								<feature name="FlashTheEntireScreen"/>
+							</alt>
+						</and>
+						<and name="Typing1">
+							<feature name="TypingAssistant"/>
+							<feature name="TurnOnAccessibilityFeaturesFromTheKeyboard"/>
+							<feature name="StickyKeys"/>
+							<and name="SlowKeys">
+								<alt mandatory="true" name="AcceptanceDelay1">
+									<feature name="Short1"/>
+									<feature name="Long1"/>
+								</alt>
+								<or name="BeepWhenAKeysIs">
+									<feature name="Accepted"/>
+									<feature name="Pressed"/>
+									<feature name="Rejected"/>
+								</or>
+							</and>
+							<and name="BounceKeys">
+								<alt mandatory="true" name="AcceptanceDelay2">
+									<feature name="Long2"/>
+									<feature name="Short2"/>
+								</alt>
+								<feature name="BeepWhenAKeyIsRejected"/>
+							</and>
+							<and name="KeyboardSetting">
+								<and mandatory="true" name="Typing2">
+									<alt abstract="true" mandatory="true" name="Typing2_1">
+										<and name="CursorBlinking">
+											<feature name="CursorBlinksInTextFields"/>
+											<alt name="Speed2">
+												<feature name="Fast2"/>
+												<feature name="Slow2"/>
+											</alt>
+										</and>
+										<and name="RepeatKeys">
+											<feature name="KeyPressesRepeatWhenKeyIsHeldDown"/>
+											<alt mandatory="true" name="Delay1">
+												<feature name="Short3"/>
+												<feature name="Long3"/>
+											</alt>
+											<alt mandatory="true" name="Speed1">
+												<feature name="Fast1"/>
+												<feature name="Slow1"/>
+											</alt>
+										</and>
+									</alt>
+									<alt name="LayoutSettings">
+										<alt name="AllowDifferentLayoutsForIndividualWindows">
+											<feature name="NewWindowsUseTheDefaultLayout"/>
+											<feature name="NewWindowsUseThePreviousWindowsLayout"/>
+										</alt>
+										<feature name="UseTheSameLayoutForAllWindows"/>
+									</alt>
+								</and>
+								<and name="Shortcuts">
+									<alt name="Launchers">
+										<and name="KeyToShowTheHUD">
+											<feature mandatory="true" name="Alt_T"/>
+										</and>
+										<and name="LauncherTerminal">
+											<feature mandatory="true" name="Ctrl_Alt_T"/>
+										</and>
+									</alt>
+									<and name="Navigation">
+										<and mandatory="true" name="MoveWindowToWorkspace">
+											<feature mandatory="true" name="Disabled2"/>
+										</and>
+									</and>
+									<alt name="Screenshots">
+										<and name="TakeAScreenshotOfAWindow">
+											<feature mandatory="true" name="Alt_Print"/>
+										</and>
+										<and name="CopyAScreenshotToClipboard">
+											<feature mandatory="true" name="Ctrl_Print"/>
+										</and>
+										<and name="TakeAScreenshot">
+											<feature mandatory="true" name="Print"/>
+										</and>
+										<and name="TakeAScreenshotOfAnArea">
+											<feature mandatory="true" name="Shift_Print"/>
+										</and>
+										<and name="CopyAScreenhotOfAnAreaToClipboard">
+											<feature mandatory="true" name="Shift_Ctrl_Print"/>
+										</and>
+										<and name="CopyAScreenshotOfAwindowToClipboard">
+											<feature mandatory="true" name="Ctrl_Alt_Print"/>
+										</and>
+									</alt>
+									<feature name="SoundAndMedia"/>
+									<alt name="System">
+										<and name="LogOut">
+											<feature mandatory="true" name="Ctr_Alt_Delete"/>
+										</and>
+										<and name="LockScreen">
+											<feature mandatory="true" name="Ctrl_Alt_L"/>
+										</and>
+									</alt>
+									<alt name="Typing3">
+										<and name="AlternativeCharactersKey">
+											<feature mandatory="true" name="Disabled4"/>
+										</and>
+										<and name="ComposeKey">
+											<feature mandatory="true" name="Disabled3"/>
+										</and>
+										<and name="SwitchToPreviousSource">
+											<feature mandatory="true" name="Shift_Super_Space"/>
+										</and>
+										<and name="SwitchToNextSource">
+											<feature mandatory="true" name="Super_Space"/>
+										</and>
+									</alt>
+									<alt name="UniversalAccess2">
+										<and name="DecreaseTextSize">
+											<feature mandatory="true" name="Disabled7"/>
+										</and>
+										<and name="HighContrastOnOrOff">
+											<feature mandatory="true" name="Disabled8"/>
+										</and>
+										<and name="IncreaseTextSize">
+											<feature mandatory="true" name="Disabled6"/>
+										</and>
+										<and name="ZoomIn">
+											<feature mandatory="true" name="Alt_Super_plusEqual"/>
+										</and>
+										<and name="ZoomOut">
+											<feature mandatory="true" name="Alt_Super_plusMinus"/>
+										</and>
+										<and name="TurnOnScreenKeyboardOnOrOff">
+											<feature mandatory="true" name="Disabled5"/>
+										</and>
+										<and name="TurnZoomOnOrOff">
+											<feature mandatory="true" name="Alt_Super_plus8"/>
+										</and>
+										<and name="TurnScreenReaderOnOrOff">
+											<feature mandatory="true" name="Alt_Super_plusS"/>
+										</and>
+									</alt>
+									<alt name="Windows">
+										<and name="MoveWindow">
+											<feature mandatory="true" name="Alt_F7"/>
+										</and>
+										<and name="ActivateTheWindowMenu">
+											<feature mandatory="true" name="Alt_Space"/>
+										</and>
+										<and name="CloseWindow">
+											<feature mandatory="true" name="Alt_F4"/>
+										</and>
+										<and name="MaximiseWindow">
+											<feature mandatory="true" name="Ctrl_Super_Up"/>
+										</and>
+										<and name="ToggleFullscreenMode">
+											<feature mandatory="true" name="Disabled9"/>
+										</and>
+										<and name="ResizeWindow">
+											<feature mandatory="true" name="Alt_F8"/>
+										</and>
+										<and name="RaiseWindowAboveOtherWindows">
+											<feature mandatory="true" name="Disabled10"/>
+										</and>
+										<and name="ToggleShadedState">
+											<feature mandatory="true" name="Ctrl_Alt_S"/>
+										</and>
+										<and name="ToggleMaximisationState">
+											<feature mandatory="true" name="Ctrl_Alt_5"/>
+										</and>
+										<and name="LowerWindowBelowOtherWindows">
+											<feature mandatory="true" name="Disabled11"/>
+										</and>
+										<and name="MinimizeWindow">
+											<feature mandatory="true" name="Ctrl_Alt_0"/>
+										</and>
+										<and name="RestoreWindow">
+											<feature mandatory="true" name="Ctrl_Super_Down"/>
+										</and>
+									</alt>
+									<feature name="CustomShortcuts"/>
+								</and>
+							</and>
+						</and>
+						<and name="PointingAndClicking">
+							<feature name="MouseKeys"/>
+							<and name="SimulatedSecondaryCLick">
+								<alt name="AcceptanceDelay3">
+									<feature name="Short4"/>
+									<feature name="Long4"/>
+								</alt>
+							</and>
+							<and name="HoverClick">
+								<alt name="Delay2">
+									<feature name="Long5"/>
+									<feature name="Short5"/>
+								</alt>
+								<alt name="MotionThreshold">
+									<feature name="Large1"/>
+									<feature name="Small1"/>
+								</alt>
+							</and>
+							<and name="MouseSettings">
+								<and mandatory="true" name="Mouse">
+									<and name="General1">
+										<alt abstract="true" mandatory="true" name="General1_1">
+											<feature name="RightHanded"/>
+											<feature name="LeftHanded"/>
+										</alt>
+										<feature name="ShowPositionOfPointerWhenTheControlKeyIsPressed"/>
+									</and>
+									<alt abstract="true" mandatory="true" name="Mouse_2">
+										<and name="PointerSpeed1">
+											<alt mandatory="true" name="Acceleration1">
+												<feature name="Slow3"/>
+												<feature name="Fast3"/>
+											</alt>
+											<alt mandatory="true" name="Sensitivity1">
+												<feature name="Low3"/>
+												<feature name="High3"/>
+											</alt>
+										</and>
+										<and name="DragAndDrop">
+											<alt mandatory="true" name="Tbreshold">
+												<feature name="Small2"/>
+												<feature name="Large2"/>
+											</alt>
+										</and>
+										<and name="DoubleClickTimeOut">
+											<alt mandatory="true" name="TimeOut">
+												<feature name="Long6"/>
+												<feature name="Short6"/>
+											</alt>
+										</and>
+									</alt>
+								</and>
+								<and mandatory="true" name="Touchpad">
+									<and name="General2">
+										<feature name="DisableTouchpadWhileTyping"/>
+										<feature name="EnableMouseClicksWithTouchpad"/>
+									</and>
+									<and mandatory="true" name="Scrolling">
+										<alt abstract="true" mandatory="true" name="Scrolling_1">
+											<feature name="Disabled1"/>
+											<feature name="TwoFingerScrolling"/>
+											<feature name="AdgeScrolling"/>
+										</alt>
+										<feature name="EnableHorizontalScrolling"/>
+									</and>
+									<and name="PointerSpeed2">
+										<alt mandatory="true" name="Acceleration2">
+											<feature name="Slow4"/>
+											<feature name="Fast4"/>
+										</alt>
+										<alt mandatory="true" name="Sensitivity2">
+											<feature name="High4"/>
+											<feature name="Low4"/>
+										</alt>
+									</and>
+								</and>
+							</and>
+						</and>
+					</and>
+					<feature name="Displays"/>
+					<feature name="Low"/>
+					<feature name="Normal"/>
+					<feature name="High"/>
+					<feature name="AcceptanceDelay"/>
+					<feature name="Short"/>
+					<feature name="Long"/>
+					<feature name="Typing"/>
+					<feature name="Speed"/>
+					<feature name="Slow"/>
+					<feature name="Fast"/>
+					<feature name="UniversalAccess"/>
+					<feature name="Disabled"/>
+					<feature name="Delay"/>
+					<feature name="Small"/>
+					<feature name="Large"/>
+					<feature name="General"/>
+					<feature name="PointerSpeed"/>
+					<feature name="Acceleration"/>
+					<feature name="Sensitivity"/>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow4</var>
+					</not>
+					<var>Slow</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>High1</var>
+					</not>
+					<var>High</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>General</var>
+					</not>
+					<disj>
+						<var>General1</var>
+						<var>General2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled4</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Normal1</var>
+					</not>
+					<var>Normal</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Acceleration1</var>
+					</not>
+					<var>Acceleration</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Long6</var>
+					</not>
+					<var>Long</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>High3</var>
+					</not>
+					<var>High</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled7</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Short4</var>
+					</not>
+					<var>Short</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Large</var>
+					</not>
+					<disj>
+						<var>Large1</var>
+						<var>Large2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Low</var>
+					</not>
+					<disj>
+						<var>Low1</var>
+						<disj>
+							<var>Low2</var>
+							<disj>
+								<var>Low3</var>
+								<var>Low4</var>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled10</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Small2</var>
+					</not>
+					<var>Small</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Long1</var>
+					</not>
+					<var>Long</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Typing1</var>
+					</not>
+					<var>Typing</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Small1</var>
+					</not>
+					<var>Small</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>General2</var>
+					</not>
+					<var>General</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Long3</var>
+					</not>
+					<var>Long</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Sensitivity2</var>
+					</not>
+					<var>Sensitivity</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Short5</var>
+					</not>
+					<var>Short</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow3</var>
+					</not>
+					<var>Slow</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Delay</var>
+					</not>
+					<disj>
+						<var>Delay1</var>
+						<var>Delay2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Short1</var>
+					</not>
+					<var>Short</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UniversalAccess1</var>
+					</not>
+					<var>UniversalAccess</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled2</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Short2</var>
+					</not>
+					<var>Short</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Low2</var>
+					</not>
+					<var>Low</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>High4</var>
+					</not>
+					<var>High</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Low3</var>
+					</not>
+					<var>Low</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Acceleration</var>
+					</not>
+					<disj>
+						<var>Acceleration1</var>
+						<var>Acceleration2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Large1</var>
+					</not>
+					<var>Large</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Long4</var>
+					</not>
+					<var>Long</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Low1</var>
+					</not>
+					<var>Low</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Displays2</var>
+					</not>
+					<var>Displays</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Displays</var>
+					</not>
+					<disj>
+						<var>Displays1</var>
+						<var>Displays2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Speed1</var>
+					</not>
+					<var>Speed</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow2</var>
+					</not>
+					<var>Slow</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Typing3</var>
+					</not>
+					<var>Typing</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Delay1</var>
+					</not>
+					<var>Delay</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Long</var>
+					</not>
+					<disj>
+						<var>Long1</var>
+						<disj>
+							<var>Long2</var>
+							<disj>
+								<var>Long3</var>
+								<disj>
+									<var>Long4</var>
+									<disj>
+										<var>Long5</var>
+										<var>Long6</var>
+									</disj>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled1</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Delay2</var>
+					</not>
+					<var>Delay</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast4</var>
+					</not>
+					<var>Fast</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>AcceptanceDelay1</var>
+					</not>
+					<var>AcceptanceDelay</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>General1</var>
+					</not>
+					<var>General</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled</var>
+					</not>
+					<disj>
+						<var>Disabled1</var>
+						<disj>
+							<var>Disabled2</var>
+							<disj>
+								<var>Disabled3</var>
+								<disj>
+									<var>Disabled4</var>
+									<disj>
+										<var>Disabled5</var>
+										<disj>
+											<var>Disabled6</var>
+											<disj>
+												<var>Disabled7</var>
+												<disj>
+													<var>Disabled8</var>
+													<disj>
+														<var>Disabled9</var>
+														<disj>
+															<var>Disabled10</var>
+															<var>Disabled11</var>
+														</disj>
+													</disj>
+												</disj>
+											</disj>
+										</disj>
+									</disj>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Large2</var>
+					</not>
+					<var>Large</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled11</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow1</var>
+					</not>
+					<var>Slow</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Normal2</var>
+					</not>
+					<var>Normal</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled6</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>AcceptanceDelay2</var>
+					</not>
+					<var>AcceptanceDelay</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>AcceptanceDelay3</var>
+					</not>
+					<var>AcceptanceDelay</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Displays1</var>
+					</not>
+					<var>Displays</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Speed2</var>
+					</not>
+					<var>Speed</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Sensitivity</var>
+					</not>
+					<disj>
+						<var>Sensitivity1</var>
+						<var>Sensitivity2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow</var>
+					</not>
+					<disj>
+						<var>Slow1</var>
+						<disj>
+							<var>Slow2</var>
+							<disj>
+								<var>Slow3</var>
+								<var>Slow4</var>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled5</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Short6</var>
+					</not>
+					<var>Short</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UniversalAccess2</var>
+					</not>
+					<var>UniversalAccess</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>High2</var>
+					</not>
+					<var>High</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Acceleration2</var>
+					</not>
+					<var>Acceleration</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>High</var>
+					</not>
+					<disj>
+						<var>High1</var>
+						<disj>
+							<var>High2</var>
+							<disj>
+								<var>High3</var>
+								<var>High4</var>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Typing2</var>
+					</not>
+					<var>Typing</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled9</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Speed</var>
+					</not>
+					<disj>
+						<var>Speed1</var>
+						<var>Speed2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Small</var>
+					</not>
+					<disj>
+						<var>Small1</var>
+						<var>Small2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Short3</var>
+					</not>
+					<var>Short</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>AcceptanceDelay</var>
+					</not>
+					<disj>
+						<var>AcceptanceDelay1</var>
+						<disj>
+							<var>AcceptanceDelay2</var>
+							<var>AcceptanceDelay3</var>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Normal</var>
+					</not>
+					<disj>
+						<var>Normal1</var>
+						<var>Normal2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Low4</var>
+					</not>
+					<var>Low</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled3</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Disabled8</var>
+					</not>
+					<var>Disabled</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast2</var>
+					</not>
+					<var>Fast</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Long5</var>
+					</not>
+					<var>Long</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Typing</var>
+					</not>
+					<disj>
+						<var>Typing1</var>
+						<disj>
+							<var>Typing2</var>
+							<var>Typing3</var>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UniversalAccess</var>
+					</not>
+					<disj>
+						<var>UniversalAccess1</var>
+						<var>UniversalAccess2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Sensitivity1</var>
+					</not>
+					<var>Sensitivity</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast1</var>
+					</not>
+					<var>Fast</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Short</var>
+					</not>
+					<disj>
+						<var>Short1</var>
+						<disj>
+							<var>Short2</var>
+							<disj>
+								<var>Short3</var>
+								<disj>
+									<var>Short4</var>
+									<disj>
+										<var>Short5</var>
+										<var>Short6</var>
+									</disj>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Long2</var>
+					</not>
+					<var>Long</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast3</var>
+					</not>
+					<var>Fast</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast</var>
+					</not>
+					<disj>
+						<var>Fast1</var>
+						<disj>
+							<var>Fast2</var>
+							<disj>
+								<var>Fast3</var>
+								<var>Fast4</var>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

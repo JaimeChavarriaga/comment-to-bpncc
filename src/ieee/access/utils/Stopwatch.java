@@ -1,4 +1,4 @@
-package ieee.access;
+package ieee.access.utils;
 
 /**
  *  Measures the time that elapses between the start and end of a

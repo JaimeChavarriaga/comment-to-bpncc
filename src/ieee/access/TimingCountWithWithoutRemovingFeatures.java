@@ -7,26 +7,27 @@ import java.util.List;
 import de.ovgu.featureide.fm.core.base.IFeatureModel;
 import de.ovgu.featureide.fm.core.base.IFeatureStructure;
 import de.ovgu.featureide.fm.core.io.manager.FeatureModelManager;
+import ieee.access.utils.Stopwatch;
 
 /**
  * Obtains processing time of counting products in a feature models without textual or cross-tree 
  * constraints using the traditional algorithm with and without removing mandatory leaves.
  * 
  * Usage:
- *    Test3 <feature-ide-model.xml> <iterations>
+ *    TimingCountWithWithoutRemovingFeatures <feature-ide-model.xml> <iterations>
  * Example:
- *    Test3 models/example-IoT-fm-2.xml 10
+ *    TimingCountWithWithoutRemovingFeatures models/example-IoT-fm-2.xml 10
  * 
  * @author Jaime Chavarriaga
  */
-public class Test3 {
+public class TimingCountWithWithoutRemovingFeatures {
 
 	public static void main(String[] args) {
 
 		// when no arguments are provided
 		if (args.length == 0) {
 			System.out.println("Counting products with and without removing mandatory leaves");
-			System.out.println("Usage: Test3 <feature-ide-model.xml>");
+			System.out.println("Usage: " + System.getProperty("sun.java.command") + " <feature-ide-model.xml> <iterations>");
 			System.exit(0);
 		}
 		

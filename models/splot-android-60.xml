@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and mandatory="true" name="android60">
+				<and mandatory="true" name="Accessibility">
+					<feature name="Services"/>
+					<and mandatory="true" name="System">
+						<feature name="Caption"/>
+						<feature name="MagnificationGestures"/>
+						<and mandatory="true" name="GestureRecognition">
+							<feature name="WholeSetting"/>
+							<feature name="DoubleClickTheScreenToWakeup"/>
+							<or mandatory="true" name="LetterGestureSettings">
+								<feature name="oPhone"/>
+								<feature name="SlidesRightContacts"/>
+								<feature name="mGallery"/>
+								<feature name="vFileManager"/>
+								<feature name="SlidesUpSettings"/>
+								<feature name="cCamera"/>
+								<feature name="wMusic"/>
+								<feature name="zMessaging"/>
+								<feature name="SlidesLeftEmail"/>
+								<feature name="SlidesDownSoundRecorder"/>
+								<feature name="eBrowser"/>
+								<feature name="sCalendar"/>
+							</or>
+						</and>
+						<feature name="LargeText"/>
+						<feature name="HighContrastTest"/>
+						<feature name="PowerButtonEndsCall"/>
+						<feature name="AutoRotateScreen"/>
+						<feature name="SpeakPasswords"/>
+						<feature name="AccessibilityShortcut"/>
+						<and mandatory="true" name="TextToSpeechOutput2">
+							<and name="PreferredEngine">
+								<feature mandatory="true" name="GoogleTextToSpeech"/>
+								<and name="Settings">
+									<alt mandatory="true" name="Language1">
+										<feature name="FrenchFrance"/>
+										<feature name="EnglishUnitedStates"/>
+										<feature name="GermanGermany"/>
+										<feature name="ItalianItaly"/>
+										<feature name="UseSystemLanguage1"/>
+										<feature name="EnglishUnitedKingdom1"/>
+										<feature name="SpanishSpain"/>
+									</alt>
+									<and mandatory="true" name="SettingForGoogleTextToSpeechEngine">
+										<feature name="AutoUpdateVoice"/>
+										<feature name="UseWiFiOnly"/>
+										<feature name="AnonymousUsageReports"/>
+										<feature name="Feedback"/>
+									</and>
+									<feature mandatory="true" name="InstallVoiceData"/>
+								</and>
+							</and>
+							<and name="General">
+								<alt mandatory="true" name="SpeechRate">
+									<feature name="VeryFast"/>
+									<feature name="Slow"/>
+									<feature name="VeryRapid"/>
+									<feature name="Fastest"/>
+									<feature name="Fast"/>
+									<feature name="Normal1"/>
+									<feature name="Rapid"/>
+									<feature name="Faster"/>
+								</alt>
+								<feature mandatory="true" name="ListenToAnExample"/>
+								<feature mandatory="true" name="DefaultLanguageStatus"/>
+							</and>
+						</and>
+						<alt mandatory="true" name="TouchAndHoldDelay">
+							<feature name="Long"/>
+							<feature name="Medium"/>
+							<feature name="Short"/>
+						</alt>
+						<feature name="QuickBout"/>
+					</and>
+					<and mandatory="true" name="Display2">
+						<and name="ColorInversion">
+							<feature mandatory="true" name="CorrectionMode"/>
+						</and>
+						<alt mandatory="true" name="ColorCorrection">
+							<feature name="Tritanomaly_BlueYellow"/>
+							<feature name="Deuteronomaly_RedGreen"/>
+							<feature name="Protanomaly_RedGreen"/>
+						</alt>
+					</and>
+				</and>
+				<and mandatory="true" name="LanguageAndInput">
+					<feature mandatory="true" name="Language2"/>
+					<and name="SpeelChecker">
+						<feature mandatory="true" name="AndroidSpeelChecker_AOSP"/>
+					</and>
+					<feature mandatory="true" name="PersonalDictionary2"/>
+					<and mandatory="true" name="KeyboardAndInputMethods">
+						<feature mandatory="true" name="CurrentKeyboard"/>
+						<and mandatory="true" name="AndroidKeyboard_AOSP">
+							<alt mandatory="true" name="Language3">
+								<feature name="Basque_Spain"/>
+								<feature name="EnglishUnitedKingdom2"/>
+								<feature name="Armenian_Armenia"/>
+								<feature name="Alphabet_QWERTY"/>
+								<feature name="UseSystemLanguage2"/>
+							</alt>
+							<and mandatory="true" name="Preferences">
+								<feature name="AutoCapitalization"/>
+								<feature name="DoubleSpacePeriod"/>
+								<feature name="VibrateOnKeypress"/>
+								<feature name="SoundOnKeypress"/>
+								<feature name="PopupOnKeypress"/>
+								<feature name="VoiceInputKey"/>
+							</and>
+							<and mandatory="true" name="AppearanceAndLayouts">
+								<alt mandatory="true" name="Theme">
+									<feature name="MaterialLight"/>
+									<feature name="MaterialDark"/>
+									<feature name="HoloWhited"/>
+									<feature name="HoloBlue"/>
+								</alt>
+								<alt mandatory="true" name="CustomInputStyles">
+									<feature name="German_QWERTY"/>
+									<feature name="French_QWERTY"/>
+								</alt>
+							</and>
+							<and mandatory="true" name="TextCorrection">
+								<feature mandatory="true" name="PersonalDictionary1"/>
+								<feature mandatory="true" name="AddOnDictionaries"/>
+								<feature name="BlockOffensiveWords1"/>
+								<and name="Advanced2">
+									<alt mandatory="true" name="KeyPopupDismissDelay">
+										<feature name="NoDelay"/>
+										<feature name="Default"/>
+									</alt>
+									<alt mandatory="true" name="KeypressVibrationDuration">
+										<feature name="_0ms"/>
+										<feature name="_50ms"/>
+										<feature name="_100ms"/>
+									</alt>
+									<feature mandatory="true" name="KeypressSoundVolume"/>
+								</and>
+								<feature mandatory="true" name="AutoCorrection"/>
+								<feature name="ShowCorrectionSuggestions"/>
+								<feature name="PersonalizedSuggestions"/>
+								<feature name="SuggestContactNames"/>
+								<feature name="NextWordSuggestions"/>
+							</and>
+							<feature mandatory="true" name="Advanced1"/>
+						</and>
+						<and mandatory="true" name="GoocgleVoiceTyping">
+							<feature mandatory="true" name="Language4"/>
+							<feature mandatory="true" name="OKGoogleDetection"/>
+							<alt mandatory="true" name="HandsFree">
+								<feature name="ForBluetoothDevices"/>
+								<feature name="ForWiredHeadsets"/>
+							</alt>
+							<alt mandatory="true" name="SpeechOutput">
+								<feature name="On"/>
+								<feature name="HandsFreeOnly"/>
+							</alt>
+							<feature name="BlockOffensiveWords2"/>
+							<feature name="BluetoothHeadset"/>
+						</and>
+					</and>
+					<and mandatory="true" name="Speech">
+						<and mandatory="true" name="VoiceInput">
+							<feature name="EnchanceGoogleService"/>
+							<feature name="BasicGooglrRecohnition"/>
+						</and>
+						<feature mandatory="true" name="TextToSpeechOutput1"/>
+					</and>
+					<and mandatory="true" name="MouseOrTrackpad">
+						<alt mandatory="true" name="PointerSpeed">
+							<feature name="__0"/>
+							<feature name="__100"/>
+							<feature name="__50"/>
+						</alt>
+					</and>
+				</and>
+				<and mandatory="true" name="Display1">
+					<feature name="MiraVision"/>
+					<alt mandatory="true" name="Brightness">
+						<feature name="_0_"/>
+						<feature name="_50_"/>
+						<feature name="_100_"/>
+					</alt>
+					<alt mandatory="true" name="Wallpaper">
+						<feature name="Wallpapers"/>
+						<feature name="Photos"/>
+						<alt name="LiveWallpapers">
+							<feature name="HoloSpiral"/>
+							<feature name="PhaseBean"/>
+							<feature name="Spectrum"/>
+							<feature name="Bubbles"/>
+							<feature name="BlackHole"/>
+							<feature name="MarbleLegend"/>
+						</alt>
+						<feature name="Gallery"/>
+					</alt>
+					<alt mandatory="true" name="Sleep">
+						<feature name="_10Minutes"/>
+						<feature name="_30Seconds"/>
+						<feature name="_1Minute"/>
+						<feature name="_2Minutes"/>
+						<feature name="_30Minutes"/>
+						<feature name="_15Seconds"/>
+					</alt>
+					<alt mandatory="true" name="FontSize">
+						<feature name="Small"/>
+						<feature name="Large"/>
+						<feature name="Huge"/>
+						<feature name="Normal2"/>
+					</alt>
+					<feature name="WhenDeviceIsRotated"/>
+				</and>
+				<feature name="Language"/>
+				<feature name="Display"/>
+				<feature name="PersonalDictionary"/>
+				<feature name="TextToSpeechOutput"/>
+				<feature name="Normal"/>
+				<feature name="EnglishUnitedKingdom"/>
+				<feature name="UseSystemLanguage"/>
+				<feature name="BlockOffensiveWords"/>
+				<feature name="Advanced"/>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<disj>
+					<not>
+						<var>Advanced</var>
+					</not>
+					<disj>
+						<var>Advanced1</var>
+						<var>Advanced2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Language3</var>
+					</not>
+					<var>Language</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>BlockOffensiveWords</var>
+					</not>
+					<disj>
+						<var>BlockOffensiveWords1</var>
+						<var>BlockOffensiveWords2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>EnglishUnitedKingdom1</var>
+					</not>
+					<var>EnglishUnitedKingdom</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Language1</var>
+					</not>
+					<var>Language</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PersonalDictionary1</var>
+					</not>
+					<var>PersonalDictionary</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Advanced2</var>
+					</not>
+					<var>Advanced</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PersonalDictionary2</var>
+					</not>
+					<var>PersonalDictionary</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Language2</var>
+					</not>
+					<var>Language</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UseSystemLanguage2</var>
+					</not>
+					<var>UseSystemLanguage</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Display</var>
+					</not>
+					<disj>
+						<var>Display1</var>
+						<var>Display2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>BlockOffensiveWords1</var>
+					</not>
+					<var>BlockOffensiveWords</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TextToSpeechOutput</var>
+					</not>
+					<disj>
+						<var>TextToSpeechOutput1</var>
+						<var>TextToSpeechOutput2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PersonalDictionary</var>
+					</not>
+					<disj>
+						<var>PersonalDictionary1</var>
+						<var>PersonalDictionary2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UseSystemLanguage</var>
+					</not>
+					<disj>
+						<var>UseSystemLanguage1</var>
+						<var>UseSystemLanguage2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Advanced1</var>
+					</not>
+					<var>Advanced</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TextToSpeechOutput2</var>
+					</not>
+					<var>TextToSpeechOutput</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>EnglishUnitedKingdom2</var>
+					</not>
+					<var>EnglishUnitedKingdom</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Display2</var>
+					</not>
+					<var>Display</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Language4</var>
+					</not>
+					<var>Language</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UseSystemLanguage1</var>
+					</not>
+					<var>UseSystemLanguage</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Language</var>
+					</not>
+					<disj>
+						<var>Language1</var>
+						<disj>
+							<var>Language2</var>
+							<disj>
+								<var>Language3</var>
+								<var>Language4</var>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>BlockOffensiveWords2</var>
+					</not>
+					<var>BlockOffensiveWords</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TextToSpeechOutput1</var>
+					</not>
+					<var>TextToSpeechOutput</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Display1</var>
+					</not>
+					<var>Display</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>EnglishUnitedKingdom</var>
+					</not>
+					<disj>
+						<var>EnglishUnitedKingdom1</var>
+						<var>EnglishUnitedKingdom2</var>
+					</disj>
+				</disj>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

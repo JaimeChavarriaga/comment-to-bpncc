@@ -1,0 +1,1895 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and mandatory="true" name="windows80">
+				<and mandatory="true" name="Accessibility">
+					<and name="UseTheComputerWithoutADisplay">
+						<and mandatory="true" name="HearTextReadAloud">
+							<or abstract="true" mandatory="true" name="HearTextReadAloud_1">
+								<feature name="TuenOnAudioDescription"/>
+								<feature name="TurnOnNarrator1"/>
+							</or>
+							<or name="SetupTextToSpeech">
+								<and name="TextToSpeech">
+									<feature name="Control_TheVoiceProperties_Speed_OtherOption"/>
+									<alt mandatory="true" name="VoiceSelection">
+										<feature name="MicrosoftDavidDesktopEnglishUS"/>
+										<feature name="MicrosoftZiraDesktopEnglishGB"/>
+										<feature name="MicrosoftDavidDesktopEnglishGB"/>
+										<feature name="MicrosoftZiraDesktopEnglishUS"/>
+									</alt>
+									<alt mandatory="true" name="VoiceSpeed">
+										<feature name="Normal"/>
+										<feature name="Fast1"/>
+										<feature name="Slow1"/>
+									</alt>
+									<feature name="AudioOutput"/>
+									<feature name="Advanced2"/>
+								</and>
+								<and name="SpeechRecognition">
+									<alt mandatory="true" name="Language">
+										<feature name="MicrosoftSpeechRecognizer8_0ForWindowsEnglishUS"/>
+										<feature name="MicrosoftSpeechRecognizer8_0ForWindowsEnglishUK"/>
+									</alt>
+									<and name="RecognitionProfiles">
+										<feature name="DefaultSpeechProfile"/>
+										<feature name="New"/>
+										<feature name="TrainProfile"/>
+									</and>
+									<and name="UserSettings">
+										<feature name="RunSpeechRecognitionAtStartup"/>
+										<feature name="ReviewDocumentsAndMailToImproveAccuracy"/>
+										<feature name="EnableVoiceActivation"/>
+										<alt mandatory="true" name="NumberOfSpaceToInsertAfterPonctuation">
+											<feature name="_1"/>
+											<feature name="_2"/>
+										</alt>
+									</and>
+									<and mandatory="true" name="Microphone1">
+										<feature mandatory="true" name="Level"/>
+										<feature name="AudioInput"/>
+										<feature name="Advanced1"/>
+										<feature name="ConfigureMicrophone"/>
+									</and>
+								</and>
+							</or>
+						</and>
+						<and mandatory="true" name="AdjustTimeLimitsAndFlashingVisuals1">
+							<feature name="TurnOffAllUnnecessaryAnimation"/>
+							<alt mandatory="true" name="HowLongShouldWindowsNotificationDialogBoxesStayOpen1">
+								<feature name="_5Minutes"/>
+								<feature name="_15Seconds"/>
+								<feature name="_5Seconds"/>
+								<feature name="_7Seconds"/>
+								<feature name="_1Minute"/>
+								<feature name="_30Seconds"/>
+							</alt>
+						</and>
+						<or name="SeeAlso1">
+							<feature name="LearnAboutAdditionalAssistiveTechnologiesOnline1"/>
+							<and name="AudioDevicesAndSoundThemes">
+								<and mandatory="true" name="Playback">
+									<feature mandatory="true" name="Speakers"/>
+								</and>
+								<and mandatory="true" name="Recording">
+									<feature mandatory="true" name="Microphone2"/>
+								</and>
+								<and mandatory="true" name="Sounds">
+									<alt mandatory="true" name="SoundScheme">
+										<feature name="WindowsDefault"/>
+										<feature name="NoSounds"/>
+									</alt>
+									<feature name="PlayWindowsStartupSound"/>
+								</and>
+								<alt mandatory="true" name="Communications">
+									<feature name="ReduceTheVolumeOfOtherSoundsBy50"/>
+									<feature name="ReduceTheVolumeOfOtherSoundsBy80"/>
+									<feature name="MuteAllOtherSounds"/>
+									<feature name="DoNothing"/>
+								</alt>
+							</and>
+						</or>
+					</and>
+					<and name="MakeTheComputerEasierToSee">
+						<or abstract="true" mandatory="true" name="MakeTheComputerEasierToSee_1">
+							<or name="HearTextAndDescriptionReadAloud">
+								<feature name="TurnOnAudioDescription"/>
+								<feature name="TurnOnNarrator2"/>
+							</or>
+							<and name="MakeThingsOnTheScreenEasierToSee">
+								<feature mandatory="true" name="AdjustTheColorAndTransparencyOfTheWindowsBorders"/>
+								<feature mandatory="true" name="FineTuneDisplayEffects"/>
+								<feature name="MakeTheFOcusRectangleThicker"/>
+								<alt mandatory="true" name="SetTheTchicknessOfTheBlinkingCursor">
+									<feature name="S_2"/>
+									<feature name="S_4"/>
+									<feature name="S_14"/>
+									<feature name="S_15"/>
+									<feature name="S_13"/>
+									<feature name="S_21"/>
+									<feature name="S_22"/>
+									<feature name="S_12"/>
+									<feature name="S_6"/>
+									<feature name="S_23"/>
+									<feature name="S_11"/>
+									<feature name="S_10"/>
+									<feature name="S_8"/>
+									<feature name="S_9"/>
+									<feature name="S_5"/>
+									<feature name="S_19"/>
+									<feature name="S_20"/>
+									<feature name="S_24"/>
+									<feature name="S_7"/>
+									<feature name="S_1"/>
+									<feature name="S_18"/>
+									<feature name="S_16"/>
+									<feature name="S_3"/>
+									<feature name="S_17"/>
+								</alt>
+								<feature name="TurnOffAllUnnecessaryAnimationWhenPossible"/>
+								<feature name="RemoveBackgroundImageWhenAvailable1"/>
+							</and>
+							<and name="HighContrast">
+								<alt name="ChooseAHighContrastTheme">
+									<feature name="HighContrastBlack"/>
+									<feature name="HighContrast_1"/>
+									<feature name="HighContrastWhite"/>
+									<feature name="HighContrast_2"/>
+								</alt>
+								<and name="TurnOnOrOffHighContrastWhenLeftPlusALTPlusLeftSCHIFTplusPRINT_SCREENisPressed">
+									<feature name="DisplayAWarningMessageWhenTurningASettingOn1"/>
+									<feature name="MakeASoundWhenTurningASettingOnOrOff1"/>
+								</and>
+							</and>
+							<and name="MakeThingsOnTheScreenLarger">
+								<or mandatory="true" name="ChangeTheSizeOfTextAndIcons">
+									<or name="ChangeOnlyTheTextSize">
+										<and name="Menus">
+											<alt abstract="true" mandatory="true" name="Menus_1">
+												<feature name="M_7"/>
+												<feature name="M_10"/>
+												<feature name="M_16"/>
+												<feature name="M_18"/>
+												<feature name="M_22"/>
+												<feature name="M_21"/>
+												<feature name="M_23"/>
+												<feature name="M_13"/>
+												<feature name="M_24"/>
+												<feature name="M_6"/>
+												<feature name="M_12"/>
+												<feature name="M_14"/>
+												<feature name="M_17"/>
+												<feature name="M_15"/>
+												<feature name="M_8"/>
+												<feature name="M_19"/>
+												<feature name="M_11"/>
+												<feature name="M_9"/>
+												<feature name="M_20"/>
+											</alt>
+											<feature name="Bold2"/>
+										</and>
+										<and name="TitleBars">
+											<alt abstract="true" mandatory="true" name="TitleBars_1">
+												<feature name="TB_19"/>
+												<feature name="TB_9"/>
+												<feature name="TB_21"/>
+												<feature name="TB_11"/>
+												<feature name="TB_6"/>
+												<feature name="TB_7"/>
+												<feature name="TB_23"/>
+												<feature name="TB_16"/>
+												<feature name="TB_12"/>
+												<feature name="TB_17"/>
+												<feature name="TB_8"/>
+												<feature name="TB_15"/>
+												<feature name="TB_18"/>
+												<feature name="TB_20"/>
+												<feature name="TB_10"/>
+												<feature name="TB_22"/>
+												<feature name="TB_24"/>
+												<feature name="TB_13"/>
+												<feature name="TB_14"/>
+											</alt>
+											<feature name="Bold1"/>
+										</and>
+										<feature name="PaletteTitles"/>
+										<feature name="Icons"/>
+										<feature name="Tooltips"/>
+										<and name="MessageBoxes">
+											<alt abstract="true" mandatory="true" name="MessageBoxes_1">
+												<feature name="ME_17"/>
+												<feature name="ME_10"/>
+												<feature name="ME_18"/>
+												<feature name="ME_21"/>
+												<feature name="ME_6"/>
+												<feature name="ME_20"/>
+												<feature name="ME_7"/>
+												<feature name="ME_16"/>
+												<feature name="ME_11"/>
+												<feature name="ME_23"/>
+												<feature name="ME_19"/>
+												<feature name="ME_13"/>
+												<feature name="ME_22"/>
+												<feature name="ME_15"/>
+												<feature name="ME_8"/>
+												<feature name="ME_12"/>
+												<feature name="ME_24"/>
+												<feature name="ME_9"/>
+												<feature name="ME_14"/>
+											</alt>
+											<feature name="Bold3"/>
+										</and>
+									</or>
+									<and name="ChangeTheSizeOfAllItems">
+										<alt abstract="true" mandatory="true" name="ChangeTheSizeOfAllItems_1">
+											<feature name="Medium125"/>
+											<feature name="Smaller100"/>
+										</alt>
+										<and name="Magnifier1">
+											<or abstract="true" mandatory="true" name="Magnifier1_1">
+												<feature name="ZoomIn"/>
+												<feature name="ZoomOut"/>
+											</or>
+											<alt name="Views">
+												<feature name="FullScreen"/>
+												<feature name="Lens"/>
+												<feature name="Docked"/>
+											</alt>
+											<and name="Option1">
+												<alt mandatory="true" name="SetHowMuchTheViewChangesWhenZoomingInOrOut">
+													<feature name="_150"/>
+													<feature name="_100"/>
+													<feature name="_400"/>
+													<feature name="_50"/>
+													<feature name="_200"/>
+													<feature name="_25"/>
+												</alt>
+												<feature name="TurnOnColorInversion"/>
+												<and name="Tracking">
+													<feature name="FollowTheMousePointer"/>
+													<feature name="FollowTheKeyboardFocus"/>
+													<feature name="HaveMagnifierFollowTheTextInsertionPoint"/>
+												</and>
+											</and>
+											<feature name="Help"/>
+										</and>
+										<and name="CustomSizingOption">
+											<alt mandatory="true" name="ScaleToThisPercentageOfNormalSize">
+												<feature name="__100"/>
+												<feature name="__200"/>
+												<feature name="__150"/>
+												<feature name="__125"/>
+											</alt>
+											<feature name="Use"/>
+											<feature name="WindowsXpStyleScaling"/>
+										</and>
+									</and>
+								</or>
+								<feature name="TurnOnMagnifier"/>
+							</and>
+						</or>
+						<and name="SeeAlso2">
+							<feature name="PersonalizeAppearanceAndSoundEffect"/>
+							<feature name="LearnAboutAdditionalAssistiveTechnologiesOnline2"/>
+						</and>
+					</and>
+					<and name="UseTheComputerWithoutAMouseOrKeyboard">
+						<or abstract="true" mandatory="true" name="UseTheComputerWithoutAMouseOrKeyboard_1">
+							<and name="TypeUsingAPointingDevice">
+								<feature name="UseOnScreenKeyboard"/>
+							</and>
+							<and name="AvoidUsingTheMouseAndKeyboard">
+								<or mandatory="true" name="UseSpeechRecognition1">
+									<feature name="OpenTheSpeechReferenceCard"/>
+									<feature name="TrainYourComputerToBetterUnderstandYou"/>
+									<feature name="SetUpMicrophone"/>
+									<feature name="StartSpeechRecognition"/>
+									<feature name="TakeSpeechTutorial"/>
+								</or>
+							</and>
+						</or>
+						<and name="SeeAlso3">
+							<feature mandatory="true" name="LearnAboutAdditionalAssistiveTechnologiesOnline3"/>
+						</and>
+					</and>
+					<and name="MakeTheMouseEasierToUse">
+						<alt name="MousePointers">
+							<feature name="ExtraLargeWhite"/>
+							<feature name="LargeInverting"/>
+							<feature name="ExtraLargeBlack"/>
+							<feature name="RegularInverting"/>
+							<feature name="RegularWhite"/>
+							<feature name="ExtraLargeIverting"/>
+							<feature name="LargeWhite"/>
+							<feature name="RegularBlack"/>
+							<feature name="LargeBlack"/>
+						</alt>
+						<and name="ControlTheMouseWithTheKeyboard1">
+							<feature name="TurnOnMouseKeys1"/>
+							<or mandatory="true" name="SetupMouseKeys1">
+								<and name="KeyboardShortcut1">
+									<and name="TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK1">
+										<feature name="DisplayAWarningMessageWhenTurningASettingOn2"/>
+										<feature name="MakeASoundWhenTurningASettingOnOrOff2"/>
+									</and>
+								</and>
+								<and name="PointerSpeed1">
+									<alt mandatory="true" name="TopSpeed1">
+										<feature name="High1"/>
+										<feature name="Low1"/>
+									</alt>
+									<alt mandatory="true" name="Acceleration1">
+										<feature name="Fast2"/>
+										<feature name="Slow2"/>
+									</alt>
+									<feature name="HoldDownCTRLToSpeedUpAndSHIFTToSlowDown1"/>
+								</and>
+								<and name="OtherSettings1">
+									<alt name="UseMouseKeysWhenNUMLOCKis1">
+										<feature name="Off1"/>
+										<feature name="On1"/>
+									</alt>
+									<feature name="DisplayTheMouseKeysIconOnTheTaskbar1"/>
+								</and>
+							</or>
+						</and>
+						<and name="MakeItEasierToManageWindows1">
+							<feature name="ActivateAWindowByHoveringOverItWithTheMouse"/>
+							<feature name="PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen1"/>
+						</and>
+						<and name="SeeAlso4">
+							<and name="MouseSettings">
+								<feature mandatory="true" name="Buttons"/>
+								<feature mandatory="true" name="Pointer"/>
+								<feature mandatory="true" name="PointerOption"/>
+								<feature mandatory="true" name="Hardware1"/>
+							</and>
+							<feature name="LearnAboutAdditionalAssistiveTechnologiesOnline4"/>
+						</and>
+					</and>
+					<and name="MakeTheKeyboardEasierToUse">
+						<and mandatory="true" name="ControlTheMouseWithTheKeyboard2">
+							<feature name="TurnOnMouseKeys2"/>
+							<or mandatory="true" name="SetupMouseKeys2">
+								<and name="PointerSpeed2">
+									<alt mandatory="true" name="TopSpeed2">
+										<feature name="Low2"/>
+										<feature name="High2"/>
+									</alt>
+									<alt mandatory="true" name="Acceleration2">
+										<feature name="Slow3"/>
+										<feature name="Fast3"/>
+									</alt>
+									<feature name="HoldDownCTRLToSpeedUpAndSHIFTToSlowDown2"/>
+								</and>
+								<and name="OtherSettings2">
+									<alt name="UseMouseKeysWhenNUMLOCKis2">
+										<feature name="On2"/>
+										<feature name="Off2"/>
+									</alt>
+									<feature name="DisplayTheMouseKeysIconOnTheTaskbar2"/>
+								</and>
+								<and name="KeyboardShortcut2">
+									<and name="TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK2">
+										<feature name="DisplayAWarningMessageWhenTurningASettingOn3"/>
+										<feature name="MakeASoundWhenTurningASettingOnOrOff3"/>
+									</and>
+								</and>
+							</or>
+						</and>
+						<and mandatory="true" name="MakeItEasierToType1">
+							<feature name="TurnOnStickyKeys"/>
+							<feature mandatory="true" name="SetupStickyKeys"/>
+							<feature name="TurnOnToggleKeys"/>
+							<feature name="TurnOnFilterKeys1"/>
+							<and name="SetupFilterKeys2">
+								<and name="KeyboardShortcut3">
+									<feature name="TurnOnStickyKeyWhenSHIFTisPressedFiveTimes"/>
+									<feature name="DisplayAWarningMessageWhenTurningASettingOn4"/>
+									<feature name="MakeASoundWhenTurningASettingOnOrOff4"/>
+									<and name="SetupFilterKeys1">
+										<feature name="TurnOnFilterKeys2"/>
+										<and name="KeyboardShortcut4">
+											<feature name="TurnOnFilterKeyWhenRightSHIFTisPressedForEigthSeconds"/>
+											<feature name="DisplayAWarningMessageWhenTurningASettingOn5"/>
+											<feature name="MakeASoundWhenTurningASettingOnOrOff5"/>
+										</and>
+										<and mandatory="true" name="FilterOption">
+											<alt abstract="true" mandatory="true" name="FilterOption_1">
+												<feature name="TurnOnBounceKeys"/>
+												<feature name="TurnOnRepeatKeysAndSlowKeys"/>
+											</alt>
+											<alt mandatory="true" name="HowLongShouldTheComputerWaitBeforeAcceptingKeystrokes">
+												<feature name="_2_0Seconds_"/>
+												<feature name="_1_0Seconds_"/>
+												<feature name="_1_5Seconds_"/>
+												<feature name="_0_5Seconds_"/>
+												<feature name="_0_7Seconds_"/>
+											</alt>
+											<and mandatory="true" name="SetupRepeatKeysAndSlowKeys">
+												<and name="AvoidAccidentalKeytrockes">
+													<alt mandatory="true" name="HowLongDoYouWantToHoldDownAKeyBeforeYourComputerAcceptsTheAcceptsTheKeystroke">
+														<feature name="_0_3Seconds"/>
+														<feature name="_0_0Seconds"/>
+														<feature name="_1_0Seconds"/>
+														<feature name="_0_7Seconds"/>
+														<feature name="_2_0Seconds"/>
+														<feature name="_0_5Seconds"/>
+														<feature name="_5_0Seconds"/>
+														<feature name="_20_0Seconds"/>
+														<feature name="_10_0Seconds"/>
+														<feature name="_1_4Seconds"/>
+													</alt>
+												</and>
+												<and name="AvoidRepeatedKeystrokesWhenYouHoldDownAKey">
+													<alt abstract="true" mandatory="true" name="AvoidRepeatedKeystrokesWhenYouHoldDownAKey_1">
+														<feature name="IgnoreAllRepeatedKeystrokes"/>
+														<feature name="SlowDownKeyboardRepeateRates"/>
+													</alt>
+													<alt mandatory="true" name="HowLongShouldTheComputerWaitBeforeAcceptingTheFirstrepeatedKeystroke">
+														<feature name="_1_7Seconds__"/>
+														<feature name="_0_3Seconds__"/>
+														<feature name="_2_0Seconds__"/>
+														<feature name="_0_0Seconds__"/>
+														<feature name="_0_7Seconds__"/>
+														<feature name="_1_1Seconds__"/>
+													</alt>
+													<alt mandatory="true" name="HowLongShouldTheComputerWaitBeforeAcceptingSubsequentRepeatedKeystrokes">
+														<feature name="_1_7Seconds___"/>
+														<feature name="_0_0Seconds___"/>
+														<feature name="_0_3Seconds___"/>
+														<feature name="_0_7Seconds___"/>
+														<feature name="_1_1Seconds___"/>
+														<feature name="_2_0Seconds___"/>
+													</alt>
+												</and>
+											</and>
+										</and>
+										<and name="OtherSettings3">
+											<feature name="BeepWhenKeyArePressedOrAccepted"/>
+											<feature name="DisplayTheFilterKeysIconOnTheTaskbar"/>
+										</and>
+									</and>
+								</and>
+								<and name="Option2">
+									<feature name="LockModifierKeysWhenPressedTwiceInARow"/>
+									<feature name="TurnOffStickeysWhenTwoKeysArePressedAtOnce"/>
+								</and>
+								<and name="Feedback">
+									<feature name="PlayASoundWhenModifierKeysArePressed"/>
+									<feature name="DisplayTheStickyKeyIconOnTheTaskBar"/>
+								</and>
+							</and>
+						</and>
+						<and name="MakeItEasierToUseKeyboardShortcuts">
+							<feature name="UnderlineKeyboardShortcutsAndAccesskeys"/>
+						</and>
+						<and name="MakeItEasierToManageWindows2">
+							<feature name="PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen2"/>
+						</and>
+						<and name="SeeAlso5">
+							<feature name="AddADvorakKeyboardAndChangeOtherKeyboardInputSetting"/>
+							<and name="KeyboardSettings">
+								<and mandatory="true" name="Speed">
+									<and mandatory="true" name="CharacterRepeat">
+										<alt mandatory="true" name="RepeatDelay">
+											<feature name="Short"/>
+											<feature name="Long"/>
+										</alt>
+										<alt mandatory="true" name="RepeatRate">
+											<feature name="Slow4"/>
+											<feature name="Fast4"/>
+										</alt>
+									</and>
+									<alt mandatory="true" name="CursorBlinkRate">
+										<feature name="None1"/>
+										<feature name="Fast5"/>
+									</alt>
+								</and>
+								<feature mandatory="true" name="Hardware2"/>
+							</and>
+							<feature name="LearnAboutAdditionalAssistiveTechnologiesOnline5"/>
+						</and>
+					</and>
+					<and name="UseTextOrVisualAlternativesForSounds">
+						<and mandatory="true" name="UseVisualCuesInteadOfSounds">
+							<feature name="TurnOnVisualNotificationForSounds"/>
+							<alt mandatory="true" name="ChooseVisualWarning">
+								<feature name="FlashActiveCaptionBar"/>
+								<feature name="Note"/>
+								<feature name="FlashActiveWindow"/>
+								<feature name="FlashDesktop"/>
+							</alt>
+							<feature name="TurnOnTextCaptionsForSpokenDialog"/>
+						</and>
+						<and name="SeeAlso6">
+							<feature name="AudioAndSoundThemes"/>
+							<feature name="LearnAboutAdditionalAssistiveTechnologiesOnline6"/>
+						</and>
+					</and>
+					<and name="MakeItEasierToFocusOnTasks">
+						<and name="Reading">
+							<feature mandatory="true" name="TurnOnNarrator3"/>
+							<feature name="RemoveBackgroundImageWhenAvailable2"/>
+						</and>
+						<feature mandatory="true" name="MakeItEasierToType2"/>
+						<and mandatory="true" name="AdjustTimeLimitsAndFlashingVisuals2">
+							<feature name="TurnOffAllUnnecessaryAnimationsWhenPossible"/>
+							<alt mandatory="true" name="HowLongShouldWindowsNotificationDialogBoxesStayOpen2">
+								<feature name="_30_Seconds"/>
+								<feature name="_1_Minute"/>
+								<feature name="_7_Seconds"/>
+								<feature name="_15_Seconds"/>
+								<feature name="_5_Secons"/>
+								<feature name="_5_Minutes"/>
+							</alt>
+						</and>
+						<and name="MakeItEasierToManageWindows3">
+							<feature name="PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen3"/>
+						</and>
+						<and name="SeeAlso7">
+							<feature name="UseSpeechRecognition2"/>
+							<feature name="LearnAboutAdditionalAssistiveTechnologiesOnline7"/>
+						</and>
+					</and>
+					<and name="MakeTouchAndTabletsEasierToUse">
+						<alt mandatory="true" name="LaunchingCommonTools">
+							<feature name="OnScreenKeyboard"/>
+							<feature name="Narrator"/>
+							<feature name="Magnifier2"/>
+							<feature name="None2"/>
+						</alt>
+						<and name="SeeAlso8">
+							<feature name="MakeTouchEasierToUse"/>
+							<feature name="LearnAboutAdditionalAssistiveTechnologiesOnline8"/>
+						</and>
+					</and>
+					<feature name="SeeAlso"/>
+					<feature name="Microphone"/>
+					<feature name="Advanced"/>
+					<feature name="TurnOnNarrator"/>
+					<feature name="Option"/>
+					<feature name="Bold"/>
+					<feature name="LearnAboutAdditionalAssistiveTechnologiesOnline"/>
+					<feature name="DisplayAWarningMessageWhenTurningASettingOn"/>
+					<feature name="Magnifier"/>
+					<feature name="MakeASoundWhenTurningASettingOnOrOff"/>
+					<feature name="Low"/>
+					<feature name="High"/>
+					<feature name="Slow"/>
+					<feature name="Fast"/>
+					<feature name="ControlTheMouseWithTheKeyboard"/>
+					<feature name="MakeItEasierToManageWindows"/>
+					<feature name="TurnOnMouseKeys"/>
+					<feature name="SetupMouseKeys"/>
+					<feature name="KeyboardShortcut"/>
+					<feature name="PointerSpeed"/>
+					<feature name="OtherSettings"/>
+					<feature name="TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK"/>
+					<feature name="TopSpeed"/>
+					<feature name="Acceleration"/>
+					<feature name="HoldDownCTRLToSpeedUpAndSHIFTToSlowDown"/>
+					<feature name="UseMouseKeysWhenNUMLOCKis"/>
+					<feature name="DisplayTheMouseKeysIconOnTheTaskbar"/>
+					<feature name="On"/>
+					<feature name="Off"/>
+					<feature name="SetupFilterKeys"/>
+					<feature name="TurnOnFilterKeys"/>
+					<feature name="PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen"/>
+					<feature name="Hardware"/>
+					<feature name="MakeItEasierToType"/>
+					<feature name="AdjustTimeLimitsAndFlashingVisuals"/>
+					<feature name="RemoveBackgroundImageWhenAvailable"/>
+					<feature name="HowLongShouldWindowsNotificationDialogBoxesStayOpen"/>
+					<feature name="UseSpeechRecognition"/>
+					<feature name="None"/>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<disj>
+					<not>
+						<var>AdjustTimeLimitsAndFlashingVisuals2</var>
+					</not>
+					<var>AdjustTimeLimitsAndFlashingVisuals</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast2</var>
+					</not>
+					<var>Fast</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast3</var>
+					</not>
+					<var>Fast</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnNarrator3</var>
+					</not>
+					<var>TurnOnNarrator</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>ControlTheMouseWithTheKeyboard1</var>
+					</not>
+					<var>ControlTheMouseWithTheKeyboard</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>ControlTheMouseWithTheKeyboard2</var>
+					</not>
+					<var>ControlTheMouseWithTheKeyboard</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TopSpeed</var>
+					</not>
+					<disj>
+						<var>TopSpeed1</var>
+						<var>TopSpeed2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UseMouseKeysWhenNUMLOCKis1</var>
+					</not>
+					<var>UseMouseKeysWhenNUMLOCKis</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK2</var>
+					</not>
+					<var>TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>KeyboardShortcut4</var>
+					</not>
+					<var>KeyboardShortcut</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeItEasierToManageWindows2</var>
+					</not>
+					<var>MakeItEasierToManageWindows</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Magnifier1</var>
+					</not>
+					<var>Magnifier</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast5</var>
+					</not>
+					<var>Fast</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SeeAlso8</var>
+					</not>
+					<var>SeeAlso</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeASoundWhenTurningASettingOnOrOff</var>
+					</not>
+					<disj>
+						<var>MakeASoundWhenTurningASettingOnOrOff1</var>
+						<disj>
+							<var>MakeASoundWhenTurningASettingOnOrOff2</var>
+							<disj>
+								<var>MakeASoundWhenTurningASettingOnOrOff3</var>
+								<disj>
+									<var>MakeASoundWhenTurningASettingOnOrOff4</var>
+									<var>MakeASoundWhenTurningASettingOnOrOff5</var>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>DisplayAWarningMessageWhenTurningASettingOn4</var>
+					</not>
+					<var>DisplayAWarningMessageWhenTurningASettingOn</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Hardware2</var>
+					</not>
+					<var>Hardware</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SetupFilterKeys</var>
+					</not>
+					<disj>
+						<var>SetupFilterKeys1</var>
+						<var>SetupFilterKeys2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Magnifier2</var>
+					</not>
+					<var>Magnifier</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Bold</var>
+					</not>
+					<disj>
+						<var>Bold1</var>
+						<disj>
+							<var>Bold2</var>
+							<var>Bold3</var>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Bold1</var>
+					</not>
+					<var>Bold</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline3</var>
+					</not>
+					<var>LearnAboutAdditionalAssistiveTechnologiesOnline</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeASoundWhenTurningASettingOnOrOff3</var>
+					</not>
+					<var>MakeASoundWhenTurningASettingOnOrOff</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Advanced1</var>
+					</not>
+					<var>Advanced</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PointerSpeed2</var>
+					</not>
+					<var>PointerSpeed</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Low</var>
+					</not>
+					<disj>
+						<var>Low1</var>
+						<var>Low2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>None2</var>
+					</not>
+					<var>None</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>DisplayAWarningMessageWhenTurningASettingOn3</var>
+					</not>
+					<var>DisplayAWarningMessageWhenTurningASettingOn</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Microphone1</var>
+					</not>
+					<var>Microphone</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Option</var>
+					</not>
+					<disj>
+						<var>Option1</var>
+						<var>Option2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UseMouseKeysWhenNUMLOCKis</var>
+					</not>
+					<disj>
+						<var>UseMouseKeysWhenNUMLOCKis1</var>
+						<var>UseMouseKeysWhenNUMLOCKis2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow4</var>
+					</not>
+					<var>Slow</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Option1</var>
+					</not>
+					<var>Option</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnFilterKeys1</var>
+					</not>
+					<var>TurnOnFilterKeys</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>DisplayAWarningMessageWhenTurningASettingOn2</var>
+					</not>
+					<var>DisplayAWarningMessageWhenTurningASettingOn</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Hardware1</var>
+					</not>
+					<var>Hardware</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline</var>
+					</not>
+					<disj>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline1</var>
+						<disj>
+							<var>LearnAboutAdditionalAssistiveTechnologiesOnline2</var>
+							<disj>
+								<var>LearnAboutAdditionalAssistiveTechnologiesOnline3</var>
+								<disj>
+									<var>LearnAboutAdditionalAssistiveTechnologiesOnline4</var>
+									<disj>
+										<var>LearnAboutAdditionalAssistiveTechnologiesOnline5</var>
+										<disj>
+											<var>LearnAboutAdditionalAssistiveTechnologiesOnline6</var>
+											<disj>
+												<var>LearnAboutAdditionalAssistiveTechnologiesOnline7</var>
+												<var>LearnAboutAdditionalAssistiveTechnologiesOnline8</var>
+											</disj>
+										</disj>
+									</disj>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SeeAlso1</var>
+					</not>
+					<var>SeeAlso</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Low1</var>
+					</not>
+					<var>Low</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<var>SetupMouseKeys</var>
+					<disj>
+						<var>SetupMouseKeys1</var>
+						<var>SetupMouseKeys2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast4</var>
+					</not>
+					<var>Fast</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnNarrator</var>
+					</not>
+					<disj>
+						<var>TurnOnNarrator1</var>
+						<disj>
+							<var>TurnOnNarrator2</var>
+							<var>TurnOnNarrator3</var>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeASoundWhenTurningASettingOnOrOff4</var>
+					</not>
+					<var>MakeASoundWhenTurningASettingOnOrOff</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>OtherSettings</var>
+					</not>
+					<disj>
+						<var>OtherSettings1</var>
+						<disj>
+							<var>OtherSettings2</var>
+							<var>OtherSettings3</var>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>DisplayAWarningMessageWhenTurningASettingOn</var>
+					</not>
+					<disj>
+						<var>DisplayAWarningMessageWhenTurningASettingOn1</var>
+						<disj>
+							<var>DisplayAWarningMessageWhenTurningASettingOn2</var>
+							<disj>
+								<var>DisplayAWarningMessageWhenTurningASettingOn3</var>
+								<disj>
+									<var>DisplayAWarningMessageWhenTurningASettingOn4</var>
+									<var>DisplayAWarningMessageWhenTurningASettingOn5</var>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline1</var>
+					</not>
+					<var>LearnAboutAdditionalAssistiveTechnologiesOnline</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SetupMouseKeys2</var>
+					</not>
+					<var>SetupMouseKeys</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SetupFilterKeys2</var>
+					</not>
+					<var>SetupFilterKeys</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>RemoveBackgroundImageWhenAvailable1</var>
+					</not>
+					<var>RemoveBackgroundImageWhenAvailable</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline7</var>
+					</not>
+					<var>LearnAboutAdditionalAssistiveTechnologiesOnline</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Low2</var>
+					</not>
+					<var>Low</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnNarrator2</var>
+					</not>
+					<var>TurnOnNarrator</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow2</var>
+					</not>
+					<var>Slow</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>OtherSettings2</var>
+					</not>
+					<var>OtherSettings</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>None1</var>
+					</not>
+					<var>None</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeASoundWhenTurningASettingOnOrOff2</var>
+					</not>
+					<var>MakeASoundWhenTurningASettingOnOrOff</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>KeyboardShortcut2</var>
+					</not>
+					<var>KeyboardShortcut</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnNarrator1</var>
+					</not>
+					<var>TurnOnNarrator</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>DisplayTheMouseKeysIconOnTheTaskbar</var>
+					</not>
+					<disj>
+						<var>DisplayTheMouseKeysIconOnTheTaskbar1</var>
+						<var>DisplayTheMouseKeysIconOnTheTaskbar2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>HowLongShouldWindowsNotificationDialogBoxesStayOpen2</var>
+					</not>
+					<var>HowLongShouldWindowsNotificationDialogBoxesStayOpen</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline8</var>
+					</not>
+					<var>LearnAboutAdditionalAssistiveTechnologiesOnline</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>DisplayAWarningMessageWhenTurningASettingOn1</var>
+					</not>
+					<var>DisplayAWarningMessageWhenTurningASettingOn</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Acceleration2</var>
+					</not>
+					<var>Acceleration</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SeeAlso</var>
+					</not>
+					<disj>
+						<var>SeeAlso1</var>
+						<disj>
+							<var>SeeAlso2</var>
+							<disj>
+								<var>SeeAlso3</var>
+								<disj>
+									<var>SeeAlso4</var>
+									<disj>
+										<var>SeeAlso5</var>
+										<disj>
+											<var>SeeAlso6</var>
+											<disj>
+												<var>SeeAlso7</var>
+												<var>SeeAlso8</var>
+											</disj>
+										</disj>
+									</disj>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TopSpeed1</var>
+					</not>
+					<var>TopSpeed</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UseSpeechRecognition1</var>
+					</not>
+					<var>UseSpeechRecognition</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SeeAlso6</var>
+					</not>
+					<var>SeeAlso</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>DisplayAWarningMessageWhenTurningASettingOn5</var>
+					</not>
+					<var>DisplayAWarningMessageWhenTurningASettingOn</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TopSpeed2</var>
+					</not>
+					<var>TopSpeed</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeASoundWhenTurningASettingOnOrOff1</var>
+					</not>
+					<var>MakeASoundWhenTurningASettingOnOrOff</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>KeyboardShortcut1</var>
+					</not>
+					<var>KeyboardShortcut</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>HoldDownCTRLToSpeedUpAndSHIFTToSlowDown2</var>
+					</not>
+					<var>HoldDownCTRLToSpeedUpAndSHIFTToSlowDown</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnFilterKeys</var>
+					</not>
+					<disj>
+						<var>TurnOnFilterKeys1</var>
+						<var>TurnOnFilterKeys2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Acceleration</var>
+					</not>
+					<disj>
+						<var>Acceleration1</var>
+						<var>Acceleration2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnFilterKeys2</var>
+					</not>
+					<var>TurnOnFilterKeys</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>KeyboardShortcut3</var>
+					</not>
+					<var>KeyboardShortcut</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast</var>
+					</not>
+					<disj>
+						<var>Fast1</var>
+						<disj>
+							<var>Fast2</var>
+							<disj>
+								<var>Fast3</var>
+								<disj>
+									<var>Fast4</var>
+									<var>Fast5</var>
+								</disj>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>HowLongShouldWindowsNotificationDialogBoxesStayOpen1</var>
+					</not>
+					<var>HowLongShouldWindowsNotificationDialogBoxesStayOpen</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnMouseKeys2</var>
+					</not>
+					<var>TurnOnMouseKeys</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeItEasierToManageWindows1</var>
+					</not>
+					<var>MakeItEasierToManageWindows</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>ControlTheMouseWithTheKeyboard</var>
+					</not>
+					<disj>
+						<var>ControlTheMouseWithTheKeyboard1</var>
+						<var>ControlTheMouseWithTheKeyboard2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Hardware</var>
+					</not>
+					<disj>
+						<var>Hardware1</var>
+						<var>Hardware2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>None</var>
+					</not>
+					<disj>
+						<var>None1</var>
+						<var>None2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnMouseKeys</var>
+					</not>
+					<disj>
+						<var>TurnOnMouseKeys1</var>
+						<var>TurnOnMouseKeys2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>OtherSettings1</var>
+					</not>
+					<var>OtherSettings</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>AdjustTimeLimitsAndFlashingVisuals</var>
+					</not>
+					<disj>
+						<var>AdjustTimeLimitsAndFlashingVisuals1</var>
+						<var>AdjustTimeLimitsAndFlashingVisuals2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SeeAlso4</var>
+					</not>
+					<var>SeeAlso</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen</var>
+					</not>
+					<disj>
+						<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen1</var>
+						<disj>
+							<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen2</var>
+							<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen3</var>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SeeAlso5</var>
+					</not>
+					<var>SeeAlso</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SeeAlso2</var>
+					</not>
+					<var>SeeAlso</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline6</var>
+					</not>
+					<var>LearnAboutAdditionalAssistiveTechnologiesOnline</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Bold2</var>
+					</not>
+					<var>Bold</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen2</var>
+					</not>
+					<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow</var>
+					</not>
+					<disj>
+						<var>Slow1</var>
+						<disj>
+							<var>Slow2</var>
+							<disj>
+								<var>Slow3</var>
+								<var>Slow4</var>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>High</var>
+					</not>
+					<disj>
+						<var>High1</var>
+						<var>High2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SetupFilterKeys1</var>
+					</not>
+					<var>SetupFilterKeys</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline2</var>
+					</not>
+					<var>LearnAboutAdditionalAssistiveTechnologiesOnline</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>High2</var>
+					</not>
+					<var>High</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Acceleration1</var>
+					</not>
+					<var>Acceleration</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Advanced2</var>
+					</not>
+					<var>Advanced</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeASoundWhenTurningASettingOnOrOff5</var>
+					</not>
+					<var>MakeASoundWhenTurningASettingOnOrOff</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline4</var>
+					</not>
+					<var>LearnAboutAdditionalAssistiveTechnologiesOnline</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PointerSpeed1</var>
+					</not>
+					<var>PointerSpeed</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>LearnAboutAdditionalAssistiveTechnologiesOnline5</var>
+					</not>
+					<var>LearnAboutAdditionalAssistiveTechnologiesOnline</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen1</var>
+					</not>
+					<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UseSpeechRecognition2</var>
+					</not>
+					<var>UseSpeechRecognition</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>HoldDownCTRLToSpeedUpAndSHIFTToSlowDown</var>
+					</not>
+					<disj>
+						<var>HoldDownCTRLToSpeedUpAndSHIFTToSlowDown1</var>
+						<var>HoldDownCTRLToSpeedUpAndSHIFTToSlowDown2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnMouseKeys1</var>
+					</not>
+					<var>TurnOnMouseKeys</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Microphone2</var>
+					</not>
+					<var>Microphone</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>RemoveBackgroundImageWhenAvailable</var>
+					</not>
+					<disj>
+						<var>RemoveBackgroundImageWhenAvailable1</var>
+						<var>RemoveBackgroundImageWhenAvailable2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK1</var>
+					</not>
+					<var>TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>AdjustTimeLimitsAndFlashingVisuals1</var>
+					</not>
+					<var>AdjustTimeLimitsAndFlashingVisuals</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>DisplayTheMouseKeysIconOnTheTaskbar2</var>
+					</not>
+					<var>DisplayTheMouseKeysIconOnTheTaskbar</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen3</var>
+					</not>
+					<var>PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeItEasierToManageWindows3</var>
+					</not>
+					<var>MakeItEasierToManageWindows</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Microphone</var>
+					</not>
+					<disj>
+						<var>Microphone1</var>
+						<var>Microphone2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>DisplayTheMouseKeysIconOnTheTaskbar1</var>
+					</not>
+					<var>DisplayTheMouseKeysIconOnTheTaskbar</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>RemoveBackgroundImageWhenAvailable2</var>
+					</not>
+					<var>RemoveBackgroundImageWhenAvailable</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Fast1</var>
+					</not>
+					<var>Fast</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>HoldDownCTRLToSpeedUpAndSHIFTToSlowDown1</var>
+					</not>
+					<var>HoldDownCTRLToSpeedUpAndSHIFTToSlowDown</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Magnifier</var>
+					</not>
+					<disj>
+						<var>Magnifier1</var>
+						<var>Magnifier2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK</var>
+					</not>
+					<disj>
+						<var>TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK1</var>
+						<var>TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UseSpeechRecognition</var>
+					</not>
+					<disj>
+						<var>UseSpeechRecognition1</var>
+						<var>UseSpeechRecognition2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow1</var>
+					</not>
+					<var>Slow</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Bold3</var>
+					</not>
+					<var>Bold</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>High1</var>
+					</not>
+					<var>High</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SeeAlso3</var>
+					</not>
+					<var>SeeAlso</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SetupMouseKeys1</var>
+					</not>
+					<var>SetupMouseKeys</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>PointerSpeed</var>
+					</not>
+					<disj>
+						<var>PointerSpeed1</var>
+						<var>PointerSpeed2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Advanced</var>
+					</not>
+					<disj>
+						<var>Advanced1</var>
+						<var>Advanced2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Slow3</var>
+					</not>
+					<var>Slow</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>Option2</var>
+					</not>
+					<var>Option</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>OtherSettings3</var>
+					</not>
+					<var>OtherSettings</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>MakeItEasierToManageWindows</var>
+					</not>
+					<disj>
+						<var>MakeItEasierToManageWindows1</var>
+						<disj>
+							<var>MakeItEasierToManageWindows2</var>
+							<var>MakeItEasierToManageWindows3</var>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>UseMouseKeysWhenNUMLOCKis2</var>
+					</not>
+					<var>UseMouseKeysWhenNUMLOCKis</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>HowLongShouldWindowsNotificationDialogBoxesStayOpen</var>
+					</not>
+					<disj>
+						<var>HowLongShouldWindowsNotificationDialogBoxesStayOpen1</var>
+						<var>HowLongShouldWindowsNotificationDialogBoxesStayOpen2</var>
+					</disj>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>SeeAlso7</var>
+					</not>
+					<var>SeeAlso</var>
+				</disj>
+			</rule>
+			<rule>
+				<disj>
+					<not>
+						<var>KeyboardShortcut</var>
+					</not>
+					<disj>
+						<var>KeyboardShortcut1</var>
+						<disj>
+							<var>KeyboardShortcut2</var>
+							<disj>
+								<var>KeyboardShortcut3</var>
+								<var>KeyboardShortcut4</var>
+							</disj>
+						</disj>
+					</disj>
+				</disj>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

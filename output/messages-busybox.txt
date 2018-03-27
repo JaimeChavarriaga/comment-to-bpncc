@@ -1,4 +1,4 @@
-Checking file models/example-IoT-fm-1.xml
+Checking file models/busybox-1.18.0-model.xml
 Checking the number of iterations
 Running 10 iterations
 Loading feature model
