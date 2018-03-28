@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="comment-to-bpncc">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../software/eclipse-feature-ide/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+              	
+    <path id="comment-to-bpncc.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/annotations.jar"/>
+        <pathelement location="lib/antlr-3.4.jar"/>
+        <pathelement location="lib/de.ovgu.featureide.lib.fm-v3.4.3.jar"/>
+        <pathelement location="lib/guava-r09.jar"/>
+        <pathelement location="lib/guidsl.jar"/>
+        <pathelement location="lib/jakarta.jar"/>
+        <pathelement location="lib/org.sat4j.core.jar"/>
+        <pathelement location="lib/org.sat4j.pb.jar"/>
+    </path>
+              	
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+              	
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+              	
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-project" name="build"/>
+
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="comment-to-bpncc.classpath"/>
+        </javac>
+    </target>
+              	
+</project>
