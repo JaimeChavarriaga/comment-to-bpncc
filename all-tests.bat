@@ -6,7 +6,7 @@ set CLASSPATH=%CLASSPATH%;./bin;./lib/*
 echo == Deleting output
 del /q output\*.*
 
-echo == Comparing alternatives using long
+rem echo == Comparing alternatives using long
 
 echo IoT fm 1
 for /L %%a in (1,1,10) do (

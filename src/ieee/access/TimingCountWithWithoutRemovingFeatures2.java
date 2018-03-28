@@ -171,7 +171,7 @@ public class TimingCountWithWithoutRemovingFeatures2 {
 		} else if (f.isOr()) {
 			count = BigInteger.ONE;
 			for (IFeatureStructure fs : f.getChildren()) {
-				count = count.add(countConfigurations(fs).add(BigInteger.ONE));
+				count = count.multiply(countConfigurations(fs).add(BigInteger.ONE));
 			}
 			count = count.subtract(BigInteger.ONE);
 			
