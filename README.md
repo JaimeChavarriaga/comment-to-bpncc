@@ -2,6 +2,10 @@
 
 Comparison of the algorithm to count valid configurations of a feature model without constraints with and without the removing mandatory leave features.
 
+## Evaluation
+
+If you are interested, you may check some results of the evaluation in the [docs/comment.md file](https://github.com/JaimeChavarriaga/comment-to-bpncc/blob/master/docs/comment.md). 
+In addition, you can use the included software to perform further evaluations and comparisons.
 
 ## Installation
 
