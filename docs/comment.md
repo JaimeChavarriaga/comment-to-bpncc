@@ -126,16 +126,16 @@ It shows the average time of counting the products in 10 tests where each one pe
 We executed the procedure multiple times in the same program because the the JIT compiler optimizes some operations, and therefore reduces the processing time, during the execution.
 Note that the pre-processing increases the processing time instead of reducing it.
 
-Using long integers:
+**Using long integers:**
 
-|                 | # configs   | counting (ns)  | # configs   | removing (ns)  | and counting (ns)  | total (ns) | diff   |
+|                 | # configs   | only counting (ns)  | # configs   | removing (ns)  | and counting (ns)  | total (ns) | diff   |
 |-----------------|------------:|---------------:|------------:|---------------:|-------------------:|-----------:|-------:|
 | IoT FM 1        | 18          | 32806.40       | 18          | 27874.08       | 13030.37           | 40904.45   | 24.68% |
 | IoT FM 2        | 6188        | 46301.90       | 6188        | 40678.43       | 28351.98           | 69030.41   | 49.09% |
 
-Using BigInteger:
+**Using BigInteger:**
 
-|                 | # configs   | counting (ns)  | # configs   | removing (ns)  | and counting (ns)  | total (ns) | diff   |
+|                 | # configs   | only counting (ns)  | # configs   | removing (ns)  | and counting (ns)  | total (ns) | diff   |
 |-----------------|------------:|---------------:|------------:|---------------:|-------------------:|-----------:|-------:|
 | IoT FM 1        | 18          | 64580.38       | 18          | 31863.53       | 34692.24           | 66555.77   | 3.06%  |
 | IoT FM 2        | 6188        | 101179.79      | 6188        | 39603.18       | 69499.81           | 109102.99  | 7.83%  |
