@@ -150,9 +150,9 @@ Finally, the paper does not describe clearly the algorithm neither compares thei
         
 ## References
 
-1. A. Abbas, I. F. Siddiqui, S. U. J. Lee, and A. K. Bashir, “Binary pattern fornested cardinality constraints for software product line of iot-based featuremodels,” IEEE Access, vol. 5, pp. 3971–3980, 2017.
-2. D.  Benavides,  S.  Segura,  and  A.  Ruiz-Cortés,  “Automated  analysis of feature models 20 years later: A literature review,” Information Systems,vol. 35, no. 6, pp. 615–636, 2010.
-3. D. Benavides, A. R. Cortés, P. Trinidad, and S. Segura, “A survey on the automated analyses of feature models.” in XV Jornadas de Ingeniería delSoftware y Bases de Datos (JISBD 2006), 2006, pp. 367–376.
+1. A. Abbas, I. F. Siddiqui, S. U. J. Lee, and A. K. Bashir, “Binary pattern for nested cardinality constraints for software product line of IOT-based feature models,” IEEE Access, vol. 5, pp. 3971–3980, 2017.
+2. D.  Benavides,  S.  Segura,  and  A.  Ruiz-Cortés,  “Automated  analysis of feature models 20 years later: A literature review,” Information Systems, vol. 35, no. 6, pp. 615–636, 2010.
+3. D. Benavides, A. R. Cortés, P. Trinidad, and S. Segura, “A survey on the automated analyses of feature models.” in XV Jornadas de Ingeniería del Software y Bases de Datos (JISBD 2006), 2006, pp. 367–376.
 4. R. Heradio, D. Fernandez-Amoros, J. A. Cerrada, and I. Abad, “A literature review on feature diagram product counting and its usage in software product line economic models,” International Journal of Software Engineering and Knowledge Engineering, vol. 23, no. 08, pp. 1177–1204, 2013.
 5. A. Van Deursen and P. Klint, “Domain-specific language design requires feature descriptions,” Journal of Computing and Information Technology, vol. 10, no. 1, pp. 1–17, 2002.
 6. T. von der Maßen and H. Lichter, “Determining the variation degree of feature models,” in 10th International Conference on Software Product Lines (SPLC 2005). Springer, 2005, pp. 82–88.</li>
@@ -160,7 +160,7 @@ Finally, the paper does not describe clearly the algorithm neither compares thei
 8. D. Fernandez-Amoros, R. H. Gil, and J. C. Somolinos, “Inferring information from feature diagrams to product line economic models,” in 13th International Software Product Line Conference (SPLC 2009). Carnegie Mellon University, 2009, pp. 41–50.</li>
 9. D. Fernandez-Amoros, R. Heradio, J. A. Cerrada, and C. Cerrada, “A scalable approach to exact model and commonality counting for extended feature  models,” IEEE Transactions on Software Engineering, vol. 40, no. 9, pp. 895–910, 2014.
 10. S.  Apel,  D.  Batory,  C.  Kästner,  and  G.  Saake,  Software  Product  Lines. Berlin, Heidelberg: Springer Berlin Heidelberg, 2013, pp. 3–15.
-11. H. Yan,  W. Zhang,  H. Zhao, and  H. Mei,  “An  optimization strategy to feature models’ verification by eliminating verification-irrelevant featuresand constraints,” in Formal Foundations of Reuse and Domain Engineering. Springer Berlin Heidelberg, 2009, pp. 65–75.
+11. H. Yan,  W. Zhang,  H. Zhao, and  H. Mei,  “An  optimization strategy to feature models’ verification by eliminating verification-irrelevant features and constraints,” in Formal Foundations of Reuse and Domain Engineering. Springer Berlin Heidelberg, 2009, pp. 65–75.
 12. S. Segura, “Automated analysis of feature models using atomic sets,” in 12th International Conference of Software Product Lines (SPLC 2008),Second Volume (Workshops), 2008, pp. 201–207.
 
 ---
