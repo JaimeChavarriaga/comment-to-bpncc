@@ -1,6 +1,7 @@
 # Comment to BPNCC paper
 
-Comparison of the algorithm to count valid configurations of a feature model without constraints with and without the removing mandatory leave features.
+Comparison of the algorithm to count valid configurations of a feature model without constraints with and without the removing mandatory leave features. 
+This pre-processing, suggested in the [BPNCC paper](http://ieeexplore.ieee.org/document/7875079/) increases the total processing time, instead of reducing it, for that type of feature models.
 
 ## Evaluation
 
